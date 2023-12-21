@@ -1,0 +1,10 @@
+struct StickerReducer: StickerReducerProtocol {
+    
+    mutating func reduce(_ currentState: Sticker,
+                         _ action: StickerModification) -> Sticker {
+protocol TextReducerProtocol {
+    mutating func reduce(_ currentState: TextSettings,
+                         _ action: TextModification) -> TextSettings
+}
+
+struct TextReducer: TextReducerProtocol {
